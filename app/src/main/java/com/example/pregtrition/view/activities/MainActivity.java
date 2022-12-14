@@ -1,8 +1,10 @@
-package com.example.pregtrition;
+package com.example.pregtrition.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.pregtrition.R;
 
 public class MainActivity extends AppCompatActivity {
 
