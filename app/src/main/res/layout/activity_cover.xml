@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".CoverActivity">
+
+    <!-- Pregtrition -->
+    <TextView
+        android:id="@+id/pregtrition"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="Pregtrition"
+        android:textAppearance="@style/pregtrition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PregnancyNutrion"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="Pregnancy Nutrition"
+        android:textAppearance="@style/pregnancy_n"
+        app:layout_constraintEnd_toEndOf="@+id/pregtrition"
+        app:layout_constraintStart_toStartOf="@+id/pregtrition"
+        app:layout_constraintTop_toBottomOf="@+id/pregtrition" />
+
+    <!--
+    Font family: Reem Kufi Fun
+    Line height: 90sp
+    -->
+    <!-- styles.xml -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

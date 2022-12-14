@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="pregtrition">
+        Font family: Reem Kufi Fun
+        Line height: 90sp
+
+        <item name="android:textSize">
+            60sp
+        </item>
+    </style>
+    <style name="pregnancy_n">
+
+        <item name="android:textSize">
+            23sp
+        </item>
+
+    </style>
+
+</resources>

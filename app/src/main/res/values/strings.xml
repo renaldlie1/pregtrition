@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">pregtrition</string>
+    <string name="pregtrition">
+
+        Pregtrition
+    </string>
 </resources>
