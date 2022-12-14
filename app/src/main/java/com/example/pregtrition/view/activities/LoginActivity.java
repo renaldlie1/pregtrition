@@ -1,14 +1,16 @@
-package com.example.pregtrition;
+package com.example.pregtrition.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ChooseLanguageActivity extends AppCompatActivity {
+import com.example.pregtrition.R;
+
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_language);
+        setContentView(R.layout.activity_login);
     }
 }
