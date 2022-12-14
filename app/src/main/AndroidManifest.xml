@@ -10,7 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pregtrition">
         <activity
+<<<<<<< HEAD
             android:name=".view.activities.MainActivity"
+=======
+            android:name=".RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CoverActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChooseLanguageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+>>>>>>> 60ad0afc3f9b226d47df9d512efb74c49f46db5c
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
