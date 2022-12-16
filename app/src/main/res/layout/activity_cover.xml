@@ -10,6 +10,7 @@
     <!-- Pregtrition -->
     <TextView
         android:id="@+id/pregtrition"
+        android:textColor="@drawable/gradient_background"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
