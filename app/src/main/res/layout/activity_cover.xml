@@ -10,6 +10,7 @@
     <!-- Pregtrition -->
     <TextView
         android:id="@+id/pregtrition"
+        android:textColor="#67bdeb "
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -24,6 +25,7 @@
 
     <TextView
         android:id="@+id/PregnancyNutrion"
+        android:textColor="#5e67eb"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -34,6 +36,17 @@
         app:layout_constraintEnd_toEndOf="@+id/pregtrition"
         app:layout_constraintStart_toStartOf="@+id/pregtrition"
         app:layout_constraintTop_toBottomOf="@+id/pregtrition" />
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:layout_width="331dp"
+        android:layout_height="545dp"
+        app:inner_text="Get Started"
+        app:inner_text_bottom_padding="15dp"
+        app:inner_text_top_padding="15dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--
     Font family: Reem Kufi Fun
