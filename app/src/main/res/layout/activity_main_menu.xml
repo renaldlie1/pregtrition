@@ -9,16 +9,26 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
-        android:layout_width="405dp"
-        android:layout_height="85dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         android:background="#C5AFCD"
-        app:itemBackground="@drawable/ic_baseline_movie_filter_24"
-        app:itemIconTint="@color/purple_200"
+        app:itemIconTint="@color/purple_700"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.pregtrition.view.fragments.MainMenuFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997"/>
+        tools:layout="@layout/fragment_main_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
