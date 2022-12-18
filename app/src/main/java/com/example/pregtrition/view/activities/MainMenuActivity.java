@@ -2,6 +2,8 @@ package com.example.pregtrition.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
@@ -11,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainMenuActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-//    NavHostFragment navHostFragment;
+    NavHostFragment navHostFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +21,10 @@ public class MainMenuActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main_menu);
         bottomNavigationView = findViewById(R.id.bottom_navigation_view);
-//        navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView2);
-//
-////        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.nowPlaying,R.id.upcomingFragment).build();
-////        NavigationUI.setupActionBarWithNavController(MainMenuActivity.this , navHostFragment.getNavController(), appBarConfiguration);
+//        navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+
+//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.nowPlaying,R.id.upcomingFragment).build();
+//        NavigationUI.setupActionBarWithNavController(MainMenuActivity.this , navHostFragment.getNavController(), appBarConfiguration);
 //        NavigationUI.setupWithNavController(bottomNavigationView, navHostFragment.getNavController());
     }
 }
