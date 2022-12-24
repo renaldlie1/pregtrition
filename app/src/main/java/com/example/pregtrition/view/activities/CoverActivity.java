@@ -16,5 +16,7 @@ public class CoverActivity extends AppCompatActivity {
 
 
 
+
+
     }
 }
