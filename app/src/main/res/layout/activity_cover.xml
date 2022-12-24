@@ -38,6 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pregtrition" />
 
     <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe_btn"
         android:layout_width="331dp"
         android:layout_height="545dp"
         android:layout_marginTop="288dp"

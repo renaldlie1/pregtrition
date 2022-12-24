@@ -11,14 +11,14 @@
         android:icon="@drawable/ic_baseline_analytics_24"
         android:title="Analytics"/>
 
-<!--    <item-->
-<!--        android:id="@+id/nav_profile"-->
-<!--        android:icon="@drawable/ic_baseline_person_24"-->
-<!--        android:title="Profile"/>-->
-<!--    <item-->
-<!--        android:id="@+id/nav_profile"-->
-<!--        android:icon="@drawable/ic_baseline_person_24"-->
-<!--        android:title="Profile"/>-->
+    <item
+        android:id="@+id/nav_learnmore"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="Learn More"/>
+    <item
+        android:id="@+id/nav_consult"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="Consult"/>
 
     <item
         android:id="@+id/nav_profile"
