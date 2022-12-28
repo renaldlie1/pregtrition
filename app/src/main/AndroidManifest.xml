@@ -11,16 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
+<!--        <activity-->
+<!--            android:name=".view.activities.MainMenuActivity"-->
+<!--            android:exported="true">-->
+
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".view.activities.MainMenuActivity"
-            android:exported="true">
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".view.activities.CoverActivity"
             android:exported="true">
 
             <intent-filter>
