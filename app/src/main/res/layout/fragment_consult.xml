@@ -1,14 +1,680 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragments.ConsultFragment">
+    tools:context=".view.fragments.LearnMoreFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginTop="50dp"
+            app:cardBackgroundColor="#FFDFDF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_baseline_circle_pink_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_baseline_event_note_white_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    tools:srcCompat="@drawable/ic_baseline_call_24" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Consult"
+                    android:textColor="#F1215D"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Consult your condition to trusted specialists."
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Available Doctors..."
+                    android:textColor="#F67DA0"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView8"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="#FDF8F2"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView6"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_baseline_help_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/doctorboy" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:maxLines="3"
+                                    android:text="Dr. Dimas Prayogo, Sp.OG"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Obgyn"
+                                    android:textColor="#0F6A00"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_calendar_month_24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="6 Years"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_thumb_up_24"
+                                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="100%"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                                <Button
+                                    android:id="@+id/buttonChat1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/btn_chat"
+                                    android:text="Chat"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="#FDF8F2"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_baseline_help_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/doctorboy" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:maxLines="3"
+                                    android:text="Dr. Muhammad Dennis, Sp.GK"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Physician Nutrition"
+                                    android:textColor="#0F6A00"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_calendar_month_24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="5 Years"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_thumb_up_24"
+                                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="100%"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                                <Button
+                                    android:id="@+id/buttonChat2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/btn_chat"
+                                    android:text="Chat"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="#FDF8F2"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_baseline_help_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/doctorgirl" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:maxLines="3"
+                                    android:text="Dr. Josephine Christian, Sp.OG"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Physician Nutrition"
+                                    android:textColor="#0F6A00"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_calendar_month_24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="5 Years"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_thumb_up_24"
+                                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="100%"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                                <Button
+                                    android:id="@+id/buttonChat2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/btn_chat"
+                                    android:text="Chat"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="#FDF8F2"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toTopOf="@+id/cardView6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_baseline_help_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/doctorboy" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:maxLines="3"
+                                    android:text="Dr. Alex Karev, Sp.GK"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Obgyn"
+                                    android:textColor="#0F6A00"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_calendar_month_24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="8 Years"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_thumb_up_24"
+                                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="100%"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                                <Button
+                                    android:id="@+id/buttonChat2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/btn_chat"
+                                    android:text="Chat"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="#FDF8F2"
+                            app:cardCornerRadius="80dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_baseline_help_24"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/doctorgirl" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:maxLines="3"
+                                    android:text="Dr. Cherish Sollu, Sp.OG"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Obgyn"
+                                    android:textColor="#0F6A00"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_calendar_month_24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="7 Years"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@drawable/ic_baseline_thumb_up_24"
+                                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="100%"
+                                    android:textColor="#616161"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                                <Button
+                                    android:id="@+id/buttonChat2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:background="@drawable/btn_chat"
+                                    android:text="Chat"
+                                    android:textColor="#FF0000"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
