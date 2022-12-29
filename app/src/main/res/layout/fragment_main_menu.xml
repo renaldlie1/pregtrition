@@ -21,6 +21,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lbl_date" />
 
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="93dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/embryo_pregnancy_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_date" />
+
         <TextView
             android:id="@+id/lbl_pregnancy"
             android:layout_width="wrap_content"
