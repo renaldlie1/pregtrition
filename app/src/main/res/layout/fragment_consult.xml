@@ -39,15 +39,14 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/imageView12"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:src="@drawable/ic_baseline_event_note_white_24"
+                    android:src="@drawable/ic_baseline_call_24"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                     app:layout_constraintEnd_toEndOf="@+id/imageView2"
                     app:layout_constraintStart_toStartOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="@+id/imageView2"
-                    tools:srcCompat="@drawable/ic_baseline_call_24" />
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -123,15 +122,14 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView6"
+                                    android:id="@+id/imageView13"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="8dp"
-                                    android:src="@drawable/ic_baseline_help_24"
+                                    android:src="@drawable/doctorboy"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/doctorboy" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/textView2"
@@ -143,8 +141,8 @@
                                     android:text="Dr. Dimas Prayogo, Sp.OG"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    app:layout_constraintStart_toEndOf="@+id/imageView6"
-                                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+                                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView13" />
 
                                 <TextView
                                     android:id="@+id/textView10"
@@ -236,15 +234,14 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView7"
+                                    android:id="@+id/imageView14"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="8dp"
-                                    android:src="@drawable/ic_baseline_help_24"
+                                    android:src="@drawable/doctorboy"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/doctorboy" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/textView3"
@@ -256,8 +253,8 @@
                                     android:text="Dr. Muhammad Dennis, Sp.GK"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
-                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
                                 <TextView
                                     android:id="@+id/textView13"
@@ -349,15 +346,14 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView7"
+                                    android:id="@+id/imageView15"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="8dp"
-                                    android:src="@drawable/ic_baseline_help_24"
+                                    android:src="@drawable/doctorgirl"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/doctorgirl" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/textView3"
@@ -369,8 +365,8 @@
                                     android:text="Dr. Josephine Christian, Sp.OG"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
-                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                                    app:layout_constraintStart_toEndOf="@+id/imageView15"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView15" />
 
                                 <TextView
                                     android:id="@+id/textView13"
@@ -463,15 +459,14 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView7"
+                                    android:id="@+id/imageView16"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="8dp"
-                                    android:src="@drawable/ic_baseline_help_24"
+                                    android:src="@drawable/doctorboy"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/doctorboy" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/textView3"
@@ -483,8 +478,8 @@
                                     android:text="Dr. Alex Karev, Sp.GK"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
-                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                                    app:layout_constraintStart_toEndOf="@+id/imageView16"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
                                 <TextView
                                     android:id="@+id/textView13"
@@ -576,15 +571,14 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView7"
+                                    android:id="@+id/imageView17"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_marginStart="8dp"
-                                    android:src="@drawable/ic_baseline_help_24"
+                                    android:src="@drawable/doctorgirl"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:srcCompat="@drawable/doctorgirl" />
+                                    app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/textView3"
@@ -596,8 +590,8 @@
                                     android:text="Dr. Cherish Sollu, Sp.OG"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    app:layout_constraintStart_toEndOf="@+id/imageView7"
-                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                                    app:layout_constraintStart_toEndOf="@+id/imageView17"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
                                 <TextView
                                     android:id="@+id/textView13"
