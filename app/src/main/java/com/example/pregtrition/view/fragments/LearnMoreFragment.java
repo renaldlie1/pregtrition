@@ -88,7 +88,7 @@ public class LearnMoreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_main_menu, container, false);
+        View view =  inflater.inflate(R.layout.fragment_learn_more, container, false);
 
         recNews = view.findViewById(R.id.rv_news);
 
