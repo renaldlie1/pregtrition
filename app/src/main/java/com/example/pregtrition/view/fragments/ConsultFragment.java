@@ -3,12 +3,28 @@ package com.example.pregtrition.view.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.pregtrition.APIClient.APIClient;
+import com.example.pregtrition.APIClient.APIInterface;
 import com.example.pregtrition.R;
+import com.example.pregtrition.adapter.DoctorsAdapter;
+
+import com.example.pregtrition.model.Doctors;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +32,10 @@ import com.example.pregtrition.R;
  * create an instance of this fragment.
  */
 public class ConsultFragment extends Fragment {
+
+    APIInterface apiInterface;
+    RecyclerView recDoctors;
+    DoctorsAdapter adapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,12 +75,42 @@ public class ConsultFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        apiInterface = APIClient.getClient().create(APIInterface.class);
+        getAllDoctors();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_consult, container, false);
+        View view =  inflater.inflate(R.layout.fragment_consult, container, false);
+
+        recDoctors = view.findViewById(R.id.rv_doctors);
+
+        recDoctors.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+
+        return view;
+    }
+
+    private void getAllDoctors(){
+        Call<List<Doctors>> getDoctors = apiInterface.getDoctors();
+        getDoctors.enqueue(new Callback<List<Doctors>>() {
+            @Override
+            public void onResponse(Call<List<Doctors>> call, Response<List<Doctors>> response) {
+                ArrayList<Doctors> listDoctors = (ArrayList<Doctors>) response.body();
+                Log.d("list_doctors: ", response.raw().body().toString());
+                Log.d("list_doctors: ", listDoctors.toString());
+
+                adapter = new DoctorsAdapter(listDoctors);
+                recDoctors.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<List<Doctors>> call, Throwable t) {
+                Log.d("error_news: ", t.getMessage());
+            }
+        });
     }
 }

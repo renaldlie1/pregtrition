@@ -1,6 +1,5 @@
 package com.example.pregtrition.view.fragments;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.pregtrition.APIClient.APIClient;
-import com.example.pregtrition.APIClient.NewsInterface;
+import com.example.pregtrition.APIClient.APIInterface;
 import com.example.pregtrition.R;
 import com.example.pregtrition.adapter.NewsAdapter;
 import com.example.pregtrition.model.News;
@@ -33,7 +32,7 @@ import retrofit2.Response;
 public class LearnMoreFragment extends Fragment {
 
 
-    NewsInterface newsInterface;
+    APIInterface newsInterface;
     RecyclerView recNews;
     NewsAdapter adapter;
 
@@ -76,7 +75,7 @@ public class LearnMoreFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        newsInterface = APIClient.getClient().create(NewsInterface.class);
+        newsInterface = APIClient.getClient().create(APIInterface.class);
         getAllNews();
 
 
