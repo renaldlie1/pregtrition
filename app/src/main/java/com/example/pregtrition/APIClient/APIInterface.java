@@ -3,6 +3,7 @@ package com.example.pregtrition.APIClient;
 
 import com.example.pregtrition.model.Doctors;
 import com.example.pregtrition.model.News;
+import com.example.pregtrition.model.Nutritions;
 
 import java.util.List;
 
@@ -17,6 +18,9 @@ public interface APIInterface {
     @GET("doctors" +
             "/")
     Call<List<Doctors>> getDoctors();
+
+    @GET("nutritions/")
+    Call<List<Nutritions>> getNutritions();
 
 
 
