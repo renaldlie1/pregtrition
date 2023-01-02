@@ -14,7 +14,8 @@ public interface APIInterface {
     @GET("mahasiswa/")
     Call<List<News>> getNews();
 
-    @GET("doctors/")
+    @GET("doctors" +
+            "/")
     Call<List<Doctors>> getDoctors();
 
 
