@@ -12,7 +12,7 @@ import retrofit2.http.GET;
 
 public interface APIInterface {
 
-    @GET("mahasiswa/")
+    @GET("news/")
     Call<List<News>> getNews();
 
     @GET("doctors" +

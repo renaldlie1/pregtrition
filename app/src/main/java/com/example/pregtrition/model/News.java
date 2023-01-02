@@ -4,42 +4,18 @@ import com.google.gson.annotations.SerializedName;
 
 public class News {
 
-    @SerializedName("nim")
-    private String nim;
-    @SerializedName("name")
-    private String name;
-    @SerializedName("prodi")
-    private String prodi;
+    @SerializedName("news")
+    private String news;
 
-
-
-    public News(String nim, String name, String prodi) {
-        this.nim = nim;
-        this.name = name;
-        this.prodi = prodi;
+    public News(String news) {
+        this.news = news;
     }
 
-    public String getNim() {
-        return nim;
+    public String getNews() {
+        return news;
     }
 
-    public void setNim(String nim) {
-        nim = nim;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        name = name;
-    }
-
-    public String getProdi() {
-        return prodi;
-    }
-
-    public void setProdi(String prodi) {
-        prodi = prodi;
+    public void setNews(String news) {
+        this.news = news;
     }
 }

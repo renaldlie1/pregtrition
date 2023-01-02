@@ -35,9 +35,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull NewsAdapter.ViewHolder holder, int position) {
         News news = listNews.get(position);
-        holder.name.setText(news.getName());
-        holder.nim.setText(news.getNim());
-        holder.prodi.setText(news.getProdi());
+        holder.name.setText(news.getNews());
+
 
 
     }
@@ -54,8 +53,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
-            nim = itemView.findViewById(R.id.nim);
-            prodi = itemView.findViewById(R.id.prodi);
             img_doctor = itemView.findViewById(R.id.img_poster_card_doctor);
         }
     }
