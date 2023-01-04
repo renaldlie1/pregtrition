@@ -15,27 +15,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:gravity="center_horizontal|top"
-        android:text="Pregtrition"
+        android:text="My Pregnancy"
         android:textAppearance="@style/pregtrition"
         android:textColor="#67bdeb "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/PregnancyNutrion"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center_horizontal|top"
-        android:text="Pregnancy Nutrition"
-        android:textAppearance="@style/pregnancy_n"
-        android:textColor="#5e67eb"
-        app:layout_constraintEnd_toEndOf="@+id/pregtrition"
-        app:layout_constraintStart_toStartOf="@+id/pregtrition"
-        app:layout_constraintTop_toBottomOf="@+id/pregtrition" />
 
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipe_btn"
