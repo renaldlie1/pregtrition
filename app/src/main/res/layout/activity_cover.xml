@@ -42,7 +42,7 @@
         android:layout_width="303dp"
         android:layout_height="110dp"
         android:layout_marginTop="96dp"
-        
+
 
         app:inner_text="Get Started"
         app:inner_text_bottom_padding="15dp"
