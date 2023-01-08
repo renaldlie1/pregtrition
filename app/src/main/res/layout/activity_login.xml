@@ -10,19 +10,19 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#0E131C">
+        android:background="#FDF2F2">
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="212dp"
 
-            android:text="Welcome Back !"
-            android:textColor="#FFFFFF"
+            android:text="Login"
+            android:textColor="@color/black"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,14 +41,13 @@
             android:id="@+id/textInputLayout"
             android:layout_width="344dp"
             android:layout_height="71dp"
-            android:layout_marginTop="90dp"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            tools:layout_editor_absoluteY="346dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/lbl_username"
@@ -79,17 +78,5 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="221dp"
-            android:layout_height="17dp"
-            android:layout_marginTop="24dp"
-
-            android:text="Login to your Riot Games Account "
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/textView15"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

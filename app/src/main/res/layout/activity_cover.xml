@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/pregtrition"
-        android:layout_width="384dp"
-        android:layout_height="84dp"
+        android:layout_width="422dp"
+        android:layout_height="91dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="28dp"
@@ -20,6 +20,7 @@
         android:text="My Pregnancy"
         android:textAppearance="@style/pregtrition"
         android:textColor="@color/black"
+        app:fontFamily="@font/noto_sans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,8 +40,8 @@
 
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipe_btn"
-        android:layout_width="303dp"
-        android:layout_height="110dp"
+        android:layout_width="310dp"
+        android:layout_height="105dp"
         android:layout_marginTop="96dp"
 
 
@@ -60,10 +61,11 @@
         android:layout_marginEnd="124dp"
         android:text="Daily Pregnancy Nutrition"
         android:textColor="@color/black"
+        app:fontFamily="@font/poppins"
         app:layout_constraintBottom_toTopOf="@+id/swipe_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pregtrition"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--
     Font family: Reem Kufi Fun
