@@ -28,7 +28,7 @@
         android:layout_width="331dp"
         android:layout_height="545dp"
         android:layout_marginTop="288dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="44dp"
         app:inner_text="Get Started"
         app:inner_text_bottom_padding="15dp"
         app:inner_text_top_padding="15dp"

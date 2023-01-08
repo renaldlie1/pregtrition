@@ -24,7 +24,7 @@ public class CoverActivity extends AppCompatActivity {
 
             public void onStateChange(boolean active) {
 
-                Intent intent = new Intent(CoverActivity.this,MainMenuActivity.class);
+                Intent intent = new Intent(CoverActivity.this,LoginActivity.class);
 
                 startActivity(intent);
 
