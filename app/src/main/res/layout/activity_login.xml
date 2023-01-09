@@ -39,27 +39,20 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
+            android:textColor="@color/black"
             android:layout_width="344dp"
             android:layout_height="71dp"
-            android:textColorHint="#040303"
+            android:textColorHint="@color/black"
             app:boxBackgroundColor="#AA3939"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/black"
-            app:boxStrokeErrorColor="@color/black"
-            app:counterOverflowTextColor="@color/black"
-            app:counterTextColor="@color/black"
-            app:errorTextColor="@color/black"
-            app:helperTextTextColor="@color/black"
-            app:hintTextColor="#872323"
+            app:hintTextColor="#3E1A1A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView15"
-            app:placeholderTextColor="@color/black"
-            app:prefixTextColor="@color/black"
-            app:suffixTextColor="@color/black">
+            app:placeholderTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/lbl_username"
@@ -72,7 +65,7 @@
             android:id="@+id/lbl_passwordLayout"
             android:layout_width="344dp"
             android:layout_height="71dp"
-            android:textColorHint="#000000"
+            android:textColorHint="@color/black"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
@@ -80,7 +73,8 @@
             app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:placeholderTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/lbl_password"
