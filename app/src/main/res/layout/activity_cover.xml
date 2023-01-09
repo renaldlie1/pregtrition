@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/pregtrition"
-        android:layout_width="422dp"
-        android:layout_height="91dp"
+        android:layout_width="462dp"
+        android:layout_height="107dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="28dp"
